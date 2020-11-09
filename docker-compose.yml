@@ -17,9 +17,11 @@ services:
       - DATABASE_DRIVER=mongodb
       - MONGODB_URL=mongodb://mongodb:27017
       - MONGODB_DATABASE=heyburrito
-      - SLACK_API_TOKEN=SeeDocumentation
-      - "SLACK_EMOJI_INC=:burrito:"
-      - "SLACK_EMOJI_INC=:rottenburrito:"
+      - SLACK_API_TOKEN=xoxb-540413052949-1471321759959-hLtOgin9nf4fVjUlGtbvca5h
+      - "SLACK_EMOJI_INC=:avocado:"
+      - "SLACK_EMOJI_INC=:avocado_rotten:"
       - SLACK_DAILY_CAP=5
+      - DISABLE_EMOJI_DEC = true
+
     links:
       - mongodb
